@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.weather_app_tech_pluses.SecondScreen">
+
+    <!--inserting status image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/weatherIcon"
+        android:src="@drawable/finding"
+        android:layout_marginTop="100dp">
+    </ImageView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="274dp"
+        android:layout_above="@+id/cityFinder"
+        android:layout_marginBottom="64dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="30dp"
+            android:text="Temp: ..."
+            android:textColor="#000000"
+            android:textSize="34sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/weatherCondition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="30sp"
+            android:text="Status: ..."
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/cityName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="30sp"
+            android:text="Location: ..."
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/humidity"
+            android:layout_width="382dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/weatherIcon"
+            android:paddingStart="30sp"
+            android:text="Humidity: ... "
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/latitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/humidity"
+            android:paddingStart="30sp"
+            android:text="Latitude: ..."
+            android:textAlignment="textStart"
+            android:textColorLink="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/longitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/latitude"
+            android:paddingStart="30sp"
+            android:text="Longitude: ... "
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/longitude"
+            android:paddingStart="30sp"
+            android:text="Address: ... "
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/cityFinder"
+        android:layout_width="212dp"
+        android:layout_height="41dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="48dp"
+        android:background="@color/black">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Search New Location"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="408dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="655dp"
+        android:text="Wait until the current weather data is received"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
